@@ -26,6 +26,6 @@ TASK=${SLURM_ARRAY_TASK_ID}
 echo "Running Job $TASK on `hostname`"
 cd ${SLURM_SUBMIT_DIR}
 
-python -u run_single.py $TASK > logs/run_array_$TASK.log 
+python -u array_example.py $TASK > logs/run_array_$TASK.log 
 
 echo "Finished job now"

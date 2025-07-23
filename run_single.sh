@@ -21,6 +21,6 @@
 echo "Running on `hostname`"
 cd ${SLURM_SUBMIT_DIR}
 
-python -u run_single.py > logs/run_single.log
+python -u single_example.py > logs/run_single.log
 
 echo "Finished job now"
