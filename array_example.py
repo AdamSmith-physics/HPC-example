@@ -14,7 +14,7 @@ if not os.path.exists('data'):
 
 text = f"""This is data saved for job {job_id} in an array example script.
 
-The number of CPU cores available is {os.cpu_count()}."""
+I'm getting the hang of this!"""
 
 # Save a sentence to a txt file
 with open(f'data/example_{job_id}.txt', 'w') as file:

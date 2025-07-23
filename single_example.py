@@ -2,9 +2,6 @@ import os
 
 print("This is a single example script.")
 
-# Print CPU count
-print(f"Number of cores available: {os.cpu_count()}")
-
 # Create data directory if it doesn't exist
 if not os.path.exists('data'):
     os.makedirs('data')

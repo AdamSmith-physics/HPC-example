@@ -16,11 +16,14 @@
 # This specifies job will last no longer than 1 hour
 #SBATCH --time=1:00:00
 
+# Put slurm outputs in a logs directory to keep working directory clean
+#SBATCH -o ./logs/output-%j.out # STDOUT
+
 #below use Linux commands, which will run on compute node. This needs to be specific to your #application
 
 echo "Running on `hostname`"
 cd ${SLURM_SUBMIT_DIR}
 
-python -u single_example.py > logs/run_single.log
+python -u single_example.py
 
 echo "Finished job now"
