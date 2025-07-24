@@ -20,7 +20,7 @@
 #SBATCH --time=1:00:00
 
 # Put slurm outputs in a logs directory to keep working directory clean
-#SBATCH -o ./logs/output-%j.out # STDOUT
+#SBATCH -o ./logs/output-%A_%a.out # STDOUT
 
 #below use Linux commands, which will run on compute node. This needs to be specific to your #application
 
